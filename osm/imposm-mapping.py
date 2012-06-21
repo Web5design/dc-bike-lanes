@@ -37,6 +37,8 @@ class Highway(LineStrings):
         ('access', String()),
         ('bicycle', String()),
         ('footway', String()),
+        ('cycleway', String()),
+        ('name', String()),
     )
     field_filter = (
         ('area', Bool()),
