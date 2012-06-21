@@ -61,3 +61,59 @@ pedestrian_and_bicycle = Highway(
     }
 )
 
+cycle_route = Highway(
+    name = 'cycle_route',
+    mapping = {
+        'cycleway': (
+            'lane',
+            'share_busway',
+            'opposite_lane',
+            'track',
+            'opposite_track',
+            'shared_lane',
+            'opposite',
+        )
+    }
+)
+
+bicycle_and_car_preferred = Highway(
+    name = 'bicycle_and_car_preferred',
+    mapping = {
+        'highway': (
+            'living_street',
+            'unclassified',
+            'road',
+            'residential',
+            'residential_link',
+            'tertiary',
+            'tertiary_link'
+        )
+    }
+)
+
+bicycle_and_car_hazard = Highway(
+    name = 'bicycle_and_car_hazard',
+    mapping = {
+        'highway': (
+            'byway',
+            'track',
+            'service',
+            'secondary',
+            'secondary_link',
+            'primary',
+            'primary_link',
+            'trunk_link',
+            'motorway_link',
+        )
+    }
+)
+
+car_only = Highway(
+    name = 'car_only',
+    mapping = {
+        'highway': (
+            'trunk',
+            'motorway',
+        ),
+    }
+)
