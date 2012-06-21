@@ -12,7 +12,9 @@
                 font:bold 40px/40px 'Helvetica Neue';
                 color:#FF00EA;
                 border:1px solid #FF00EA;
-                width:150px;
+            }
+            #left {
+                width:160px;
             }
             #legal {
                 width:150px;
@@ -79,9 +81,13 @@
         </style>
     </head>
     <body>
+        <div id='left'>
         <h1>Bike Lanes Yes No</h1>
         <button id='yes'>yes</button>
         <button id='no'>no</button>
+        <h2 id='name'></h2>
+        cycleway: <span id='cycleway'></span>
+        </div>
         <div id='map'></div>
         <div id='legal'>
             <img id='logo' />

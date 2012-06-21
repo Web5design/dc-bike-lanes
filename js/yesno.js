@@ -97,7 +97,7 @@ function extent(feature) {
 
 
 var gj, feature;
-d3.json('data/cycle_route_4326.geojson', function(_) {
+d3.json('data/cycle_route_wgs.geojson', function(_) {
     gj = _;
     find_feature();
 });
@@ -106,6 +106,8 @@ function find_feature() {
     var ft = gj.features[Math.floor(Math.random() * gj.features.length)];
     gjLayer.features([ft]);
     feature = ft;
+    document.getElementById('name').innerHTML = ft.properties.NAME;
+    document.getElementById('cycleway').innerHTML = ft.properties.CYCLEWAY;
     map.extent.call(this, (extent(ft)));
 }
 
