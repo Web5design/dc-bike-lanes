@@ -14,7 +14,7 @@ var map = po.map()
 var script = document.createElement("script");
 script.setAttribute("type", "text/javascript");
 script.setAttribute("src", "http://dev.virtualearth.net"
-    + "/REST/V1/Imagery/Metadata/AerialWithLabels"
+    + "/REST/V1/Imagery/Metadata/Aerial"
     + "?key=AmT-ZC3HPevQq5IBJ7v8qiDUxrojNaqbW1zBsKF0oMNEs53p7Nk5RlAuAmwSG7bg"
     + "&jsonp=callback");
 document.body.appendChild(script);
