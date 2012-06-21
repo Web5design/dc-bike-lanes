@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>osm bike analysis</title>
+        <style>
+            body {
+                font:12px/20px 'Helvetica Neue';
+                width:800px;
+                margin:10px auto;
+            }
+            #map {
+                width:800px;
+                height:500px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Bike Lanes in DC</h1>
+        <iframe width='800' height='600' frameBorder='0' src='http://a.tiles.mapbox.com/v3/tmcw.map-2f4ad161.html#14/38.898/-77.037'></iframe>
+        <div id='chart'></div>
+        <script src='js/modestmaps.min.js'></script>
+        <script src='js/wax.mm.min.js'></script>
+        <script src='js/d3.v2.js'></script>
+        <script src='data/bike.geojson'></script>
+        <script src='js/site.js'></script>
+    </body>
+</html>
