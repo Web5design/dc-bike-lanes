@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>bike lane yes no</title>
+        <style>
+            body {
+                font:12px/20px 'Helvetica Neue';
+            }
+            h1 {
+                margin:0;
+                padding:10px;
+                font:bold 40px/40px 'Helvetica Neue';
+                color:#FF00EA;
+                border:1px solid #FF00EA;
+                width:150px;
+            }
+            #legal {
+                width:150px;
+                opacity:0.3;
+                font-size:11px;
+            }
+            button#yes {
+                background:#00FF3C;
+            }
+            button {
+                background:#FF00EA;
+                color:#fff;
+                font:bold 30px/30px 'Helvetica Neue';
+                border:0;
+                padding:15px;
+            }
+            #map {
+                position:absolute;
+                left:190px;
+                top:10px;
+                width:500px;
+                height:500px;
+            }
+            path {
+                stroke:#FF00EA;
+                stroke-width:4;
+                fill:none;
+            }
+            .compass .back {
+              fill: #eee;
+              fill-opacity: .8;
+            }
+
+            .compass .fore {
+              stroke: #999;
+              stroke-width: 1.5px;
+            }
+
+            .compass rect.back.fore {
+              fill: #999;
+              fill-opacity: .3;
+              stroke: #eee;
+              stroke-width: 1px;
+              shape-rendering: crispEdges;
+            }
+
+            .compass .direction {
+              fill: none;
+            }
+
+            .compass .chevron {
+              fill: none;
+              stroke: #999;
+              stroke-width: 5px;
+            }
+
+            .compass .zoom .chevron {
+              stroke-width: 4px;
+            }
+
+            .compass .active .chevron, .compass .chevron.active {
+              stroke: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Bike Lanes Yes No</h1>
+        <button id='yes'>yes</button>
+        <button id='no'>no</button>
+        <div id='map'></div>
+        <div id='legal'>
+            <img id='logo' />
+            <span id='copy'></span>
+        </div>
+        <script src='js/polymaps.min.js'></script>
+        <script src='js/d3.v2.js'></script>
+        <script src='data/bike.geojson'></script>
+        <script src='js/yesno.js'></script>
+    </body>
+</html>
